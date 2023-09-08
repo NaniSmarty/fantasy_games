@@ -1,0 +1,5 @@
+DB_USER = 'postgres'
+DB_HOST = '192.168.10.211'
+DB_DATABASE = 'RoanuzFantasyArchiveDB'
+DB_PORT = '5432'
+DB_PASSWORD = 'GiChn32*'

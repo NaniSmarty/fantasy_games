@@ -1,0 +1,173 @@
+[2023-09-06 18:16:12 +0530] [6845] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/home/narayanaraju/fantasy_game/fantasygame/run/gunicorn.sock']
+  backlog: 2048
+  workers: 9
+  worker_class: sync
+  threads: 20
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/narayanaraju/fantasy_game/fantasygame
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 1001
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: fantasy_game
+  default_proc_name: fantasygame.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f6949e464c0>
+  on_reload: <function OnReload.on_reload at 0x7f6949e465e0>
+  when_ready: <function WhenReady.when_ready at 0x7f6949e46700>
+  pre_fork: <function Prefork.pre_fork at 0x7f6949e46820>
+  post_fork: <function Postfork.post_fork at 0x7f6949e46940>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f6949e46a60>
+  worker_int: <function WorkerInt.worker_int at 0x7f6949e46b80>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f6949e46ca0>
+  pre_exec: <function PreExec.pre_exec at 0x7f6949e46dc0>
+  pre_request: <function PreRequest.pre_request at 0x7f6949e46ee0>
+  post_request: <function PostRequest.post_request at 0x7f6949e46f70>
+  child_exit: <function ChildExit.child_exit at 0x7f6949e5c0d0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f6949e5c1f0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f6949e5c310>
+  on_exit: <function OnExit.on_exit at 0x7f6949e5c430>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f6949e5c550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-09-06 18:16:12 +0530] [6845] [INFO] Starting gunicorn 21.2.0
+[2023-09-06 18:16:12 +0530] [6845] [DEBUG] Arbiter booted
+[2023-09-06 18:16:12 +0530] [6845] [INFO] Listening at: unix:/home/narayanaraju/fantasy_game/fantasygame/run/gunicorn.sock (6845)
+[2023-09-06 18:16:12 +0530] [6845] [INFO] Using worker: gthread
+[2023-09-06 18:16:12 +0530] [6850] [INFO] Booting worker with pid: 6850
+[2023-09-06 18:16:12 +0530] [6851] [INFO] Booting worker with pid: 6851
+[2023-09-06 18:16:12 +0530] [6852] [INFO] Booting worker with pid: 6852
+[2023-09-06 18:16:12 +0530] [6853] [INFO] Booting worker with pid: 6853
+[2023-09-06 18:16:12 +0530] [6854] [INFO] Booting worker with pid: 6854
+[2023-09-06 18:16:12 +0530] [6855] [INFO] Booting worker with pid: 6855
+[2023-09-06 18:16:12 +0530] [6856] [INFO] Booting worker with pid: 6856
+[2023-09-06 18:16:12 +0530] [6857] [INFO] Booting worker with pid: 6857
+[2023-09-06 18:16:12 +0530] [6858] [INFO] Booting worker with pid: 6858
+[2023-09-06 18:16:12 +0530] [6845] [DEBUG] 9 workers
+[2023-09-06 12:46:19 +0000] [6858] [DEBUG] POST /dashboard
+Internal Server Error: /dashboard
+[2023-09-06 12:46:19 +0000] [6858] [DEBUG] Closing connection.
+[2023-09-06 12:46:26 +0000] [6853] [DEBUG] POST /dashboard
+Internal Server Error: /dashboard
+[2023-09-06 12:46:26 +0000] [6853] [DEBUG] Closing connection.
+[2023-09-06 12:48:21 +0000] [6856] [DEBUG] GET /swagger/
+[2023-09-06 12:48:22 +0000] [6856] [DEBUG] Closing connection.
+[2023-09-06 12:48:22 +0000] [6856] [DEBUG] GET /swagger/
+view's getservertimeviewset raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/home/narayanaraju/fantasy_game/venv/lib/python3.9/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+  File "/home/narayanaraju/fantasy_game/venv/lib/python3.9/site-packages/rest_framework/generics.py", line 108, in get_serializer
+    serializer_class = self.get_serializer_class()
+  File "/home/narayanaraju/fantasy_game/venv/lib/python3.9/site-packages/rest_framework/generics.py", line 122, in get_serializer_class
+    assert self.serializer_class is not None, (
+AssertionError: 'getservertimeviewset' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+[2023-09-06 12:48:22 +0000] [6856] [DEBUG] Closing connection.
+[2023-09-06 12:48:51 +0000] [6858] [DEBUG] POST /dashboard
+Internal Server Error: /dashboard
+[2023-09-06 12:48:51 +0000] [6858] [DEBUG] Closing connection.
+[2023-09-06 12:54:34 +0000] [6856] [DEBUG] POST /gamewisesales
+[2023-09-06 12:54:34 +0000] [6856] [DEBUG] Closing connection.
+[2023-09-06 12:55:09 +0000] [6856] [DEBUG] POST /playerregistrationDetail
+[2023-09-06 12:55:09 +0000] [6856] [DEBUG] Closing connection.
+[2023-09-06 12:55:40 +0000] [6853] [DEBUG] POST /Kycdetails
+Not Found: /Kycdetails
+[2023-09-06 12:55:40 +0000] [6853] [DEBUG] Closing connection.
+[2023-09-06 12:57:24 +0000] [6856] [DEBUG] POST /playerregistrationDetail
+[2023-09-06 12:57:24 +0000] [6856] [DEBUG] Closing connection.
+[2023-09-06 13:16:08 +0000] [6853] [DEBUG] GET /dashboard
+Method Not Allowed: /dashboard
+[2023-09-06 13:16:08 +0000] [6853] [DEBUG] Closing connection.
+[2023-09-06 13:16:14 +0000] [6858] [DEBUG] POST /dashboard
+Internal Server Error: /dashboard
+[2023-09-06 13:16:14 +0000] [6858] [DEBUG] Closing connection.
+[2023-09-06 13:16:23 +0000] [6856] [DEBUG] POST /dashboard
+Unprocessable Entity: /dashboard
+[2023-09-06 13:16:23 +0000] [6856] [DEBUG] Closing connection.
+[2023-09-06 13:16:30 +0000] [6853] [DEBUG] POST /dashboard
+[2023-09-06 13:16:30 +0000] [6853] [DEBUG] Closing connection.
+[2023-09-07 03:10:10 +0000] [6855] [DEBUG] GET /
+Not Found: /
+[2023-09-07 03:10:11 +0000] [6855] [DEBUG] Closing connection.
+[2023-09-07 05:47:37 +0000] [6858] [DEBUG] OPTIONS /bologin
+[2023-09-07 05:47:37 +0000] [6858] [DEBUG] Closing connection.
+[2023-09-07 05:47:37 +0000] [6856] [DEBUG] POST /bologin
+[2023-09-07 05:47:38 +0000] [6856] [DEBUG] Closing connection.
+[2023-09-07 05:47:43 +0000] [6853] [DEBUG] POST /bologin
+[2023-09-07 05:47:44 +0000] [6853] [DEBUG] Closing connection.
+[2023-09-07 06:01:07 +0000] [6856] [DEBUG] POST /bologin
+[2023-09-07 06:01:07 +0000] [6856] [DEBUG] Closing connection.
+[2023-09-07 06:33:51 +0000] [6858] [INFO] Parent changed, shutting down: <Worker 6858>
+[2023-09-07 06:33:51 +0000] [6858] [INFO] Worker exiting (pid: 6858)
+[2023-09-07 06:33:51 +0000] [6853] [INFO] Parent changed, shutting down: <Worker 6853>
+[2023-09-07 06:33:51 +0000] [6853] [INFO] Worker exiting (pid: 6853)
+[2023-09-07 06:33:51 +0000] [6856] [INFO] Parent changed, shutting down: <Worker 6856>
+[2023-09-07 06:33:51 +0000] [6856] [INFO] Worker exiting (pid: 6856)
+[2023-09-07 06:33:51 +0000] [6852] [INFO] Parent changed, shutting down: <Worker 6852>
+[2023-09-07 06:33:51 +0000] [6852] [INFO] Worker exiting (pid: 6852)
+[2023-09-07 06:33:52 +0000] [6854] [INFO] Parent changed, shutting down: <Worker 6854>
+[2023-09-07 06:33:52 +0000] [6854] [INFO] Worker exiting (pid: 6854)
+[2023-09-07 06:33:52 +0000] [6850] [INFO] Parent changed, shutting down: <Worker 6850>
+[2023-09-07 06:33:52 +0000] [6857] [INFO] Parent changed, shutting down: <Worker 6857>
+[2023-09-07 06:33:52 +0000] [6850] [INFO] Worker exiting (pid: 6850)
+[2023-09-07 06:33:52 +0000] [6857] [INFO] Worker exiting (pid: 6857)
+[2023-09-07 06:33:52 +0000] [6851] [INFO] Parent changed, shutting down: <Worker 6851>
+[2023-09-07 06:33:52 +0000] [6851] [INFO] Worker exiting (pid: 6851)
+[2023-09-07 06:33:52 +0000] [6855] [INFO] Parent changed, shutting down: <Worker 6855>
+[2023-09-07 06:33:52 +0000] [6855] [INFO] Worker exiting (pid: 6855)
