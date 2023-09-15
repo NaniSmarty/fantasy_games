@@ -1022,8 +1022,6 @@ class dashboard_monthwise_payout_viewset(GenericAPIView):
             # io_log.info("RES code:" + str(ts) + " | " + str(method_name) + " | " + str(res) + " | " + str(client_ip))
             return Response(res, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
         monthname = serializer.validated_data['monthname']
-
-
         try:
             conn = psycopg2.connect(database=DB_DATABASE, user=DB_USER, password=DB_PASSWORD, host=DB_HOST, port=DB_PORT)
             conn.autocommit = True
